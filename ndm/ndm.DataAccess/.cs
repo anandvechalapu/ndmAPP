@@ -1,12 +1,13 @@
-﻿public class CustomerServiceImpl : ICustomerService
+﻿public class CustomService : ICustomService
 {
-    public Customer GetCustomerById(int id)
+    public void SendMessage(string message)
     {
-        // Implementation logic goes here
+        // Implement code to send message
     }
-
-    public void SaveCustomer(Customer customer)
+ 
+    public string GetMessage()
     {
-        // Implementation logic goes here
+        // Implement code to get message
+        return "";
     }
 }

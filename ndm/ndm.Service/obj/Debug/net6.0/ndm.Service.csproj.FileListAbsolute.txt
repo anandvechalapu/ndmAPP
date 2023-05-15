@@ -21,3 +21,6 @@ D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler
 D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305150614\ndm\ndm.Service\obj\Debug\net6.0\ndm.Service.dll
 D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305150614\ndm\ndm.Service\obj\Debug\net6.0\refint\ndm.Service.dll
 D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305150614\ndm\ndm.Service\obj\Debug\net6.0\ndm.Service.pdb
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305151611\ndm\ndm.Service\obj\Debug\net6.0\ndm.Service.dll
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305151611\ndm\ndm.Service\obj\Debug\net6.0\refint\ndm.Service.dll
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305151611\ndm\ndm.Service\obj\Debug\net6.0\ndm.Service.pdb
