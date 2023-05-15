@@ -1,0 +1,17 @@
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\bin\Debug\net6.0\ndm.Service.deps.json
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\bin\Debug\net6.0\ndm.Service.dll
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\bin\Debug\net6.0\ndm.Service.pdb
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\bin\Debug\net6.0\ndm.DataAccess.dll
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\bin\Debug\net6.0\ndm.DTO.dll
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\bin\Debug\net6.0\ndm.DTO.pdb
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\bin\Debug\net6.0\ndm.DataAccess.pdb
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\obj\Debug\net6.0\ndm.Service.csproj.AssemblyReference.cache
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\obj\Debug\net6.0\ndm.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\obj\Debug\net6.0\ndm.Service.AssemblyInfoInputs.cache
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\obj\Debug\net6.0\ndm.Service.AssemblyInfo.cs
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\obj\Debug\net6.0\ndm.Service.csproj.CoreCompileInputs.cache
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\obj\Debug\net6.0\ndm.Service.csproj.CopyComplete
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\obj\Debug\net6.0\ndm.Service.dll
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\obj\Debug\net6.0\refint\ndm.Service.dll
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\obj\Debug\net6.0\ndm.Service.pdb
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.Service\obj\Debug\net6.0\ref\ndm.Service.dll
