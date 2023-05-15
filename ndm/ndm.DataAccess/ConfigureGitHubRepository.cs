@@ -1,65 +1,65 @@
-﻿namespace Ndm
+﻿namespace Ndm.Repositories
 {
-    public class ConfigureGitHubRepository : IConfigureGitHubRepository
+    public class ConfigureGithubRepository
     {
-        private readonly IMongoClient _mongoClient;
-        private readonly IMongoDatabase _mongoDatabase;
-        private readonly IMongoCollection<ConfigureGitHubModel> _mongoCollection;
+        private readonly NdmDTO _context;
 
-        public ConfigureGitHubRepository(IMongoClient mongoClient)
+        public ConfigureGithubRepository(NdmDTO context)
         {
-            _mongoClient = mongoClient;
-            _mongoDatabase = _mongoClient.GetDatabase("GitHubDb");
-            _mongoCollection = _mongoDatabase.GetCollection<ConfigureGitHubModel>("GitHubConfig");
+            _context = context;
         }
 
-        public async Task<bool> CreateAsync(ConfigureGitHubModel model)
+        public async Task<bool> CreateAsync(ConfigureGithubModel model)
         {
+            var newConfigureGithubModel = new ConfigureGithubModel
+            {
+                Username = model.Username,
+                Password = model.Password,
+                Url = model.Url,
+                RepositoryName = model.RepositoryName,
+                Title = model.Title,
+                UserName = model.UserName,
+                Action = model.Action,
+                NumberOfEntries = model.NumberOfEntries
+            };
+
             try
             {
-                await _mongoCollection.InsertOneAsync(model);
+                _context.ConfigureGithubModel.Add(newConfigureGithubModel);
+                await _context.SaveChangesAsync();
                 return true;
             }
-            catch (Exception ex)
+            catch
             {
                 return false;
             }
         }
 
-        public async Task<ConfigureGitHubModel> ReadAsync(int id)
+        public async Task<bool> UpdateAsync(ConfigureGithubModel model)
         {
+            var updateConfigureGithubModel = await _context.ConfigureGithubModel.FindAsync(model.Id);
+
+            if (updateConfigureGithubModel == null)
+            {
+                return false;
+            }
+
+            updateConfigureGithubModel.Username = model.Username;
+            updateConfigureGithubModel.Password = model.Password;
+            updateConfigureGithubModel.Url = model.Url;
+            updateConfigureGithubModel.RepositoryName = model.RepositoryName;
+            updateConfigureGithubModel.Title = model.Title;
+            updateConfigureGithubModel.UserName = model.UserName;
+            updateConfigureGithubModel.Action = model.Action;
+            updateConfigureGithubModel.NumberOfEntries = model.NumberOfEntries;
+
             try
             {
-                var filter = Builders<ConfigureGitHubModel>.Filter.Eq(s => s.Id, id);
-                var result = await _mongoCollection.Find(filter).SingleOrDefaultAsync();
-                return result;
-            }
-            catch (Exception ex)
-            {
-                return null;
-            }
-        }
-
-        public async Task<bool> UpdateAsync(ConfigureGitHubModel model)
-        {
-            try
-            {
-                var filter = Builders<ConfigureGitHubModel>.Filter.Eq(s => s.Id, model.Id);
-                var update = Builders<ConfigureGitHubModel>.Update
-                    .Set(s => s.SacralAiUrl, model.SacralAiUrl)
-                    .Set(s => s.GithubUsername, model.GithubUsername)
-                    .Set(s => s.GithubPassword, model.GithubPassword)
-                    .Set(s => s.GithubUrl, model.GithubUrl)
-                    .Set(s => s.RepositoryName, model.RepositoryName)
-                    .Set(s => s.Title, model.Title)
-                    .Set(s => s.UserName, model.UserName)
-                    .Set(s => s.Action, model.Action)
-                    .Set(s => s.NoOfEntries, model.NoOfEntries);
-
-                var result = await _mongoCollection.UpdateOneAsync(filter, update);
+                _context.ConfigureGithubModel.Update(updateConfigureGithubModel);
+                await _context.SaveChangesAsync();
                 return true;
             }
-            catch (Exception ex)
+            catch
             {
                 return false;
             }
@@ -67,16 +67,35 @@
 
         public async Task<bool> DeleteAsync(int id)
         {
-            try
-            {
-                var filter = Builders<ConfigureGitHubModel>.Filter.Eq(s => s.Id, id);
-                var result = await _mongoCollection.DeleteOneAsync(filter);
-                return true;
-            }
-            catch (Exception ex)
+            var deleteConfigureGithubModel = await _context.ConfigureGithubModel.FindAsync(id);
+
+            if (deleteConfigureGithubModel == null)
             {
                 return false;
             }
+
+            try
+            {
+                _context.ConfigureGithubModel.Remove(deleteConfigureGithubModel);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<ConfigureGithubModel> GetAsync(int id)
+        {
+            var getConfigureGithubModel = await _context.ConfigureGithubModel.FindAsync(id);
+            return getConfigureGithubModel;
+        }
+
+        public async Task<IEnumerable<ConfigureGithubModel>> GetAllAsync()
+        {
+            var getAllConfigureGithubModels = await _context.ConfigureGithubModel.ToListAsync();
+            return getAllConfigureGithubModels;
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VRP4FcFwk2SzXdLCxSLn68sQSXXtAVztbAUOD4tto/qO2vr3Uw2rUo49LQQv105+8EGbzkcVIn2ZeQa6fZcP8A==",
+  "dgSpecHash": "0k5pXrYfSjvVBm3LHTMs28pDlkwME7DmO4WWHzDVsf+cYQEBueDJQKcAJtB91+jSkU3UrcMcFeNW5CNdAlLIWg==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\898\\202305152442\\ndm\\ndm.Service\\ndm.Service.csproj",
+  "projectFilePath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\898\\202305155355\\ndm\\ndm.Service\\ndm.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\awssdk.core\\3.7.106.35\\awssdk.core.3.7.106.35.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.103.3\\awssdk.dynamodbv2.3.7.103.3.nupkg.sha512",
