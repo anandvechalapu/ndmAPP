@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iRENDHb6aUSIxKMEYx/N7MLzmHRL4sdekmlx1S+NSADBhDnEqz9Fzp9Mfrx2zTjnv5RTdr/acT0ZPX+nebvq5Q==",
+  "dgSpecHash": "VRP4FcFwk2SzXdLCxSLn68sQSXXtAVztbAUOD4tto/qO2vr3Uw2rUo49LQQv105+8EGbzkcVIn2ZeQa6fZcP8A==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\898\\202305151611\\ndm\\ndm.Service\\ndm.Service.csproj",
+  "projectFilePath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\898\\202305152442\\ndm\\ndm.Service\\ndm.Service.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\DELL\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\awssdk.core\\3.7.106.35\\awssdk.core.3.7.106.35.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.103.3\\awssdk.dynamodbv2.3.7.103.3.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
