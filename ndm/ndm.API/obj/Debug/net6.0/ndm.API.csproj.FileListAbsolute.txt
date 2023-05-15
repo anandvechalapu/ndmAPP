@@ -46,3 +46,6 @@ D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler
 D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.API\obj\Debug\net6.0\ndm.API.pdb
 D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.API\obj\Debug\net6.0\ndm.API.genruntimeconfig.cache
 D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305152810\ndm\ndm.API\obj\Debug\net6.0\ref\ndm.API.dll
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305155646\ndm\ndm.API\obj\Debug\net6.0\ndm.API.dll
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305155646\ndm\ndm.API\obj\Debug\net6.0\refint\ndm.API.dll
+D:\Projects\Microsoft\API\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\898\202305155646\ndm\ndm.API\obj\Debug\net6.0\ndm.API.pdb
