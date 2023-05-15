@@ -1,15 +1,12 @@
-﻿namespace NDM.Service
+﻿namespace Ndm.Service
 {
-    using NDM.DTO;
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
+    using Ndm.DTO;
 
-    public interface IConfigureGithubService
+    public interface IConfigureGitHubService
     {
-        Task<List<ConfigureGithubModel>> GetAllAsync();
-        Task<ConfigureGithubModel> GetByIdAsync(int id);
-        Task CreateAsync(ConfigureGithubModel model);
-        Task UpdateAsync(ConfigureGithubModel model);
-        Task DeleteAsync(int id);
+        Task<bool> CreateAsync(ConfigureGitHubModel model);
+        Task<ConfigureGitHubModel> ReadAsync(int id);
+        Task<bool> UpdateAsync(ConfigureGitHubModel model);
+        Task<bool> DeleteAsync(int id);
     }
 }

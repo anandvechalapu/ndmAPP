@@ -1,49 +1,66 @@
-﻿namespace NDM.API
+﻿namespace Ndm.API
 {
+    using Ndm.DTO;
+    using Ndm.Service;
     using Microsoft.AspNetCore.Mvc;
-    using NDM.DTO;
-    using NDM.Service;
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
 
-    [Route("api/[controller]")]
-    public class ConfigureGithubController : Controller
+    [Route("api/configureGitHub")]
+    [ApiController]
+    public class ConfigureGitHubController : ControllerBase
     {
-        private readonly ConfigureGithubService _configureGithubService;
+        private readonly ConfigureGitHubService _configureGitHubService;
 
-        public ConfigureGithubController(ConfigureGithubService configureGithubService)
+        public ConfigureGitHubController(ConfigureGitHubService configureGitHubService)
         {
-            _configureGithubService = configureGithubService;
-        }
-
-        [HttpGet]
-        public async Task<List<ConfigureGithubModel>> GetAllAsync()
-        {
-            return await _configureGithubService.GetAllAsync();
-        }
-
-        [HttpGet("{id}")]
-        public async Task<ConfigureGithubModel> GetByIdAsync(int id)
-        {
-            return await _configureGithubService.GetByIdAsync(id);
+            _configureGitHubService = configureGitHubService;
         }
 
         [HttpPost]
-        public async Task CreateAsync([FromBody] ConfigureGithubModel model)
+        public async Task<IActionResult> CreateAsync(ConfigureGitHubModel model)
         {
-            await _configureGithubService.CreateAsync(model);
+            var result = await _configureGitHubService.CreateAsync(model);
+            if (!result)
+            {
+                return BadRequest();
+            }
+
+            return Ok();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ReadAsync(int id)
+        {
+            var result = await _configureGitHubService.ReadAsync(id);
+            if (result == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(result);
         }
 
         [HttpPut]
-        public async Task UpdateAsync([FromBody] ConfigureGithubModel model)
+        public async Task<IActionResult> UpdateAsync(ConfigureGitHubModel model)
         {
-            await _configureGithubService.UpdateAsync(model);
+            var result = await _configureGitHubService.UpdateAsync(model);
+            if (!result)
+            {
+                return BadRequest();
+            }
+
+            return Ok();
         }
 
-        [HttpDelete("{id}")]
-        public async Task DeleteAsync(int id)
+        [HttpDelete]
+        public async Task<IActionResult> DeleteAsync(int id)
         {
-            await _configureGithubService.DeleteAsync(id);
+            var result = await _configureGitHubService.DeleteAsync(id);
+            if (!result)
+            {
+                return BadRequest();
+            }
+
+            return Ok();
         }
     }
 }

@@ -1,42 +1,35 @@
-﻿namespace NDM.Service
+﻿namespace Ndm.Service
 {
-    using NDM.DataAccess;
-    using NDM.DTO;
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
+    using Ndm.DataAccess;
+    using Ndm.DTO;
 
-    public class ConfigureGithubService : IConfigureGithubService
+    public class ConfigureGitHubService : IConfigureGitHubService
     {
-        private readonly IConfigureGithubRepository _configureGithubRepository;
+        private readonly IConfigureGitHubRepository _configureGitHubRepository;
 
-        public ConfigureGithubService(IConfigureGithubRepository configureGithubRepository)
+        public ConfigureGitHubService(IConfigureGitHubRepository configureGitHubRepository)
         {
-            _configureGithubRepository = configureGithubRepository;
+            _configureGitHubRepository = configureGitHubRepository;
         }
 
-        public async Task<List<ConfigureGithubModel>> GetAllAsync()
+        public async Task<bool> CreateAsync(ConfigureGitHubModel model)
         {
-            return await _configureGithubRepository.GetAllAsync();
+            return await _configureGitHubRepository.CreateAsync(model);
         }
 
-        public async Task<ConfigureGithubModel> GetByIdAsync(int id)
+        public async Task<ConfigureGitHubModel> ReadAsync(int id)
         {
-            return await _configureGithubRepository.GetByIdAsync(id);
+            return await _configureGitHubRepository.ReadAsync(id);
         }
 
-        public async Task CreateAsync(ConfigureGithubModel model)
+        public async Task<bool> UpdateAsync(ConfigureGitHubModel model)
         {
-            await _configureGithubRepository.CreateAsync(model);
+            return await _configureGitHubRepository.UpdateAsync(model);
         }
 
-        public async Task UpdateAsync(ConfigureGithubModel model)
+        public async Task<bool> DeleteAsync(int id)
         {
-            await _configureGithubRepository.UpdateAsync(model);
-        }
-
-        public async Task DeleteAsync(int id)
-        {
-            await _configureGithubRepository.DeleteAsync(id);
+            return await _configureGitHubRepository.DeleteAsync(id);
         }
     }
 }
